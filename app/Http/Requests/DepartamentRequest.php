@@ -23,7 +23,8 @@ class DepartamentRequest extends FormRequest
     {
         return [
             'title' => ['required'],
-            'phone' => ['required'],
+            'phone' => ['nullable'],
+            's_phone' => ['required','min:5','max:5'],
             'adress' => ['required'],
             'company' => ['required'],
             'people' => ['required']

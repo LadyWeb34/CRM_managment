@@ -15,7 +15,8 @@
                     <x-splade-input name="title" label="Название отдела" />
                     <x-splade-input name="company" :label="__('Наименование компании')" />
                     <x-splade-input name="adress" :label="__('Фактический адрес')" />
-                    <x-splade-input name="phone" :label="__('Телефон для связи')" />
+                    <x-splade-input name="phone" :label="__('Мобильный телефон')" />
+                    <x-splade-input name="s_phone" :label="__('Внутренний телефон')" />
                     <x-splade-input name="people" :label="__('Ответственно лицо')" />
                     <br>
                     <x-splade-submit label="Сохранить" />

@@ -13,6 +13,7 @@ class Departament extends Model
         'phone',
         'adress',
         'company',
-        'people'
+        'people',
+        's_phone'
     ];
 }

@@ -19,10 +19,10 @@
                             {{ __('Панель управления') }}
                         </x-nav-link>
                         <x-nav-link :href="route('pribor.index')" :active="request()->routeIs('pribor.index')">
-                            {{ __('Приборы СИ') }}
+                            {{ __('Приборы') }}
                         </x-nav-link>
                         <x-nav-link :href="route('type.index')" :active="request()->routeIs('type.index')">
-                            {{ __('Типы СИ') }}
+                            {{ __('Типы') }}
                         </x-nav-link>
                         <x-nav-link :href="route('staff.index')" :active="request()->routeIs('staff.index')">
                             {{ __('Сотрудники') }}
@@ -32,6 +32,9 @@
                         </x-nav-link>
                         <x-nav-link :href="route('operation.index')" :active="request()->routeIs('operation.index')">
                             {{ __('Операции и работы') }}
+                        </x-nav-link>
+                        <x-nav-link :href="route('poverka.index')" :active="request()->routeIs('poverka.index')">
+                            {{ __('Поверка оборудования') }}
                         </x-nav-link>
                     </div>
                 </div>

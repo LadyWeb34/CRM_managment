@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\DepartamentController;
 use App\Http\Controllers\Admin\OperationController;
+use App\Http\Controllers\Admin\PoverkaController;
 use App\Http\Controllers\Admin\PriborController;
 use App\Http\Controllers\Admin\StaffController;
 use App\Http\Controllers\Admin\TypeController;
@@ -52,5 +53,6 @@ Route::middleware(['splade'])->group(function () {
         Route::resource('staff', StaffController::class);
         Route::resource('pribor', PriborController::class);
         Route::resource('operation', OperationController::class);
+        Route::resource('poverka', PoverkaController::class);
     });
 });

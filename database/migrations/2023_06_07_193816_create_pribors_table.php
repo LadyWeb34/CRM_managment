@@ -16,9 +16,10 @@ return new class extends Migration
             $table->string('title')->comment('Наименование прибора СИ');
             $table->foreignId('type_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete()->comment('Тип прибора СИ');
             $table->string('number')->comment('Инвертарный номер');
-            $table->string('date_realese')->comment('Дата выпуска');
-            $table->string('date_start')->comment('Дата начала пользования');
-            $table->string('date_end')->comment('Дата окончания пользования');
+            $table->date('date_realese')->comment('Дата выпуска');
+            $table->integer('deta_count')->comment('Переодичность проверки');
+            $table->date('date_start')->comment('Дата начала пользования');
+            $table->date('date_end')->comment('Дата окончания пользования');
             $table->string('status')->comment('Статус');
             $table->foreignId('departament_id')->constrained()->cascadeOnUpdate()->cascadeOnDelete()->comment('Отдел');
             $table->text('description')->comment('Описание');

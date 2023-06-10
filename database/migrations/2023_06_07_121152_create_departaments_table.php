@@ -17,6 +17,7 @@ return new class extends Migration
             $table->longText('adress')->comment('Фактический адрес');
             $table->string('company')->comment('Полное название организации');
             $table->string('phone')->comment('Телефон');
+            $table->string('s_phone')->comment('Внутренний телефон');
             $table->string('people')->comment('Ответственное лицо');
             $table->timestamps();
         });

@@ -15,16 +15,30 @@
                     <x-splade-input name="title" :label="__('Наименование прибора СИ')" />
                     <x-splade-select name="type_id" :label="__('Тип прибора')" :options="$types" />
                     <x-splade-input name="number" :label="__('Инвертарный номер')" />
-                    <x-splade-input name="date_realese" :label="__('Дата выпуска')" />
-                    <x-splade-input name="date_start" :label="__('Дата начала пользования')" />
-                    <x-splade-input name="date_end" :label="__('Дата окончания пользования')" />
+                    <x-splade-input name="date_realese" :label="__('Дата выпуска')" date />
+                    <x-splade-input name="date_start" :label="__('Дата начала пользования')" date />
+                    <x-splade-select name="deta_count" :label="__('Переодичность проверки')">
+                        <option value="1">Каждые месяц</option>
+                        <option value="2">Каждые 2 месяца</option>
+                        <option value="3">Каждые 3 месяца</option>
+                        <option value="4">Каждые 4 месяца</option>
+                        <option value="5">Каждые 5 месяцев</option>
+                        <option value="6">Каждые 6 месяцев</option>
+                        <option value="7">Каждые 7 месяцев</option>
+                        <option value="8">Каждые 8 месяцев</option>
+                        <option value="9">Каждые 9 месяцев</option>
+                        <option value="10">Каждые 10 месяцев</option>
+                        <option value="11">Каждые 11 месяцев</option>
+                        <option value="12">Каждые 12 месяцев</option>
+                     </x-splade-select>
+                     <x-splade-input name="date_end" :label="__('Дата проверки')" date />
                     <x-splade-select name="departament_id " :label="__('Отдел')" :options="$departaments" />
                     <x-splade-textarea name="description" :label="__('Описание прибора')" autosize />
                     <x-splade-select name="status" :label="__('Статус прибора')">
-                        <option value="0">Не используется</option>
+                        <option value="0">Вывод с эксплуатации</option>
                         <option value="1">Используется</option>
                         <option value="2">Добавлен</option>
-                        <option value="3">Перераспределяется</option>
+                        <option value="3">Проверка</option>
                         <option value="4">Не исправлен</option>
                      </x-splade-select>
                     <br>

@@ -26,12 +26,12 @@ class PriborRequest extends FormRequest
             'title' => ['required'],
             'type_id' => ['required'],
             'number' => ['required',Rule::unique('pribors','number')->ignore($this->route('pribor'))],
-            'date_realese' => ['required'],
-            'date_start' => ['required'],
-            'date_end' => ['required'],
+            'date_realese' => ['required','date'],
+            'date_start' => ['required','date'],
+            'deta_count' => ['required'],
             'status' => ['required'],
             'departament_id' => ['required'],
-            'description' => ['required']
+            'description' => ['required'],
         ];
     }
 }
